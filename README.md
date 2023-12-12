@@ -8,7 +8,7 @@ Connect ArduCam Mini OV5642 to ESP8266 as per the wiring diagram.
 
 Video Demonstration: 
 
-Welcome to this step-by-step tutorial where I'll guide you through the process of setting up an ESP8266 NodeMCU with the ArduCam Mini OV5642 camera module to capture images and live-stream video.![image](https://www.youtube.com/watch?v=O3iWLkQ1Gm8&t=111s&ab_channel=RexInnovationHub) 
+Welcome to this step-by-step tutorial where I'll guide you through the process of setting up an ESP8266 NodeMCU with the ArduCam Mini OV5642 camera module to capture images and live-stream video.![video](https://www.youtube.com/watch?v=O3iWLkQ1Gm8&t=111s&ab_channel=RexInnovationHub) 
 
 Code:
 Copy provided code, replace placeholders (Wi-Fi credentials, server info).
