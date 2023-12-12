@@ -14,9 +14,9 @@ Welcome to this step-by-step tutorial where I'll guide you through the process o
 
 <ins>`Important Libraries to install`</ins>
 
-<ins>`ESP8266`</ins> https://arduino.esp8266.com/stable/package_esp8266com_index.json
+<ins>ESP8266</ins> https://arduino.esp8266.com/stable/package_esp8266com_index.json
 
-<ins>`ArduCam`</ins> Install via Arduino Library Manager.
+<ins>ArduCam</ins> Install via Arduino Library Manager.
 
 <ins>`Code:`</ins>
 
