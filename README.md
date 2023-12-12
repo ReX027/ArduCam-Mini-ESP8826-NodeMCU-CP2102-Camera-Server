@@ -4,5 +4,6 @@ Welcome to this step-by-step tutorial where I'll guide you through the process o
 
 Setup:
 Connect ArduCam Mini OV5642 to ESP8266 as per the wiring diagram.
-![image](https://github.com/ReX027/ArduCam-Mini-ESP8826-NodeMCU-CP2102-Camera-Server/assets/90253821/dfbc9fb9-852b-4453-9940-808b9395dc1d)
+![image](https://github.com/ReX027/ArduCam-Mini-ESP8826-NodeMCU-CP2102-Camera-Server/assets/90253821/94ffb02d-46ee-43be-a0b2-40407d2ee348)
+
 
