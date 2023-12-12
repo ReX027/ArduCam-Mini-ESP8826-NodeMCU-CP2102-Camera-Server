@@ -14,6 +14,7 @@ Welcome to this step-by-step tutorial where I'll guide you through the process o
 
 Code:
 Copy provided code, replace placeholders (Wi-Fi credentials, server info).
+
 Select board NodeMCU 1.0 (ESP-12E Module)
 Upload code to ESP8266.
 
