@@ -12,11 +12,11 @@ Welcome to this step-by-step tutorial where I'll guide you through the process o
 
 [![YouTube Video](https://img.youtube.com/vi/O3iWLkQ1Gm8/mqdefault.jpg)](https://www.youtube.com/watch?v=O3iWLkQ1Gm8)
 
-<ins>`Library:`</ins>
+<ins>`Important Libraries to install`</ins>
 
-<ins>`ESP8266 Library:`</ins> https://arduino.esp8266.com/stable/package_esp8266com_index.json
+<ins>`ESP8266`</ins> https://arduino.esp8266.com/stable/package_esp8266com_index.json
 
-<ins>`ArduCam Library:`</ins> Install via Arduino Library Manager.
+<ins>`ArduCam`</ins> Install via Arduino Library Manager.
 
 <ins>`Code:`</ins>
 
