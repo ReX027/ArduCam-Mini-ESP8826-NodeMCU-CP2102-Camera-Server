@@ -12,6 +12,10 @@ Welcome to this step-by-step tutorial where I'll guide you through the process o
 
 [![YouTube Video](https://img.youtube.com/vi/O3iWLkQ1Gm8/mqdefault.jpg)](https://www.youtube.com/watch?v=O3iWLkQ1Gm8)
 
+Library:
+ESP8266 Library:https://arduino.esp8266.com/stable/package_esp8266com_index.json
+ArduCam Library: Install via Arduino Library Manager.
+
 Code:
 Copy provided code, replace placeholders (Wi-Fi credentials, server info).
 
