@@ -25,4 +25,8 @@ Copy provided code, replace placeholders (Wi-Fi credentials, server info).
 Select board NodeMCU 1.0 (ESP-12E Module)
 Upload code to ESP8266.
 
+webserver Interface:
+![WhatsApp Image 2023-12-17 at 11 21 36 PM](https://github.com/ReX027/ArduCam-Mini-ESP8826-NodeMCU-CP2102-Camera-Server/assets/90253821/c5f4f7d3-e2ba-44be-8848-eb3f66d19b52)
+
+
 
