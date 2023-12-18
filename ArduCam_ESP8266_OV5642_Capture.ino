@@ -1,18 +1,3 @@
-// ArduCAM Mini demo (C)2016 Lee
-// web: http://www.ArduCAM.com
-// This program is a demo of how to use most of the functions
-// of the library with ArduCAM ESP8266 5MP camera.
-// This demo was made for ArduCAM ESP8266 OV5642 5MP Camera.
-// It can take photo and send to the Web.
-// It can take photo continuously as video streaming and send to the Web.
-// The demo sketch will do the following tasks:
-// 1. Set the camera to JEPG output mode.
-// 2. if server.on("/capture", HTTP_GET, serverCapture),it can take photo and send to the Web.
-// 3.if server.on("/stream", HTTP_GET, serverStream),it can take photo continuously as video 
-//streaming and send to the Web.
-
-// This program requires the ArduCAM V4.0.0 (or later) library and ArduCAM ESP8266 5MP camera
-// and use Arduino IDE 1.5.8 compiler or above
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
@@ -26,9 +11,7 @@
 #error Please select the ArduCAM ESP8266 UNO board in the Tools/Board
 #endif
 
-//This demo can only work on OV5642_MINI_5MP or OV5642_MINI_5MP_BIT_ROTATION_FIXED
-//or OV5640_MINI_5MP_PLUS or ARDUCAM_SHIELD_V2 platform.
-#if !(defined (OV5642_MINI_5MP) || defined (OV5642_MINI_5MP_BIT_ROTATION_FIXED) || defined (OV5642_MINI_5MP_PLUS) ||(defined (ARDUCAM_SHIELD_V2) && defined (OV5642_CAM)))
+#if !( defined (OV5642_MINI_5MP_PLUS))
 #error Please select the hardware platform and camera module in the ../libraries/ArduCAM/memorysaver.h file
 #endif
 
@@ -37,7 +20,7 @@ const int CS = 16;
 
 //you can change the value of wifiType to select Station or AP mode.
 //Default is AP mode.
-int wifiType = 1; // 0:Station  1:AP
+int wifiType = 0; // 0:Station  1:AP
 
 //AP mode configuration
 //Default is arducam_esp8266.If you want,you can change the AP_aaid  to your favorite name
@@ -46,8 +29,8 @@ const char *AP_ssid = "arducam_esp8266";
 const char *AP_password = "";
 
 //Station mode you should put your ssid and password
-const char* ssid = "SSID"; // Put your SSID here
-const char* password = "PASSWORD"; // Put your PASSWORD here
+const char* ssid = "eaccess"; // Put your SSID here
+const char* password = "eaccess123"; // Put your PASSWORD here
 
 ESP8266WebServer server(80);
 ArduCAM myCAM(OV5642, CS);
@@ -71,7 +54,7 @@ void camCapture(ArduCAM myCAM){
   
   myCAM.CS_LOW();
   myCAM.set_fifo_burst();
-  #if !(defined (OV5642_MINI_5MP_PLUS) ||(defined (ARDUCAM_SHIELD_V2) && defined (OV5642_CAM)))
+  #if !(defined (OV5642_MINI_5MP_PLUS))
   SPI.transfer(0xFF);
   #endif
   if (!client.connected()) return;
@@ -134,7 +117,7 @@ void serverStream(){
 
     myCAM.CS_LOW();
     myCAM.set_fifo_burst(); 
-    #if !(defined (OV5642_MINI_5MP_PLUS) ||(defined (ARDUCAM_SHIELD_V2) && defined (OV5642_CAM)))
+    #if !(defined (OV5642_MINI_5MP_PLUS))
     SPI.transfer(0xFF);
     #endif   
     if (!client.connected()) break;
